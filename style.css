@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Poppins' , sans-serif;
+}
+h2{
+    font-size: 1.5rem;
+}
+.navbar{
+    position: fixed;
+
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    width: 100%;
+    
+    color: #0ef;
+    background-color: black;
+    height: 10vh;
+    z-index: 1;
+    
+    padding-right: 3%;
+}
+.navb{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.navb a{
+    text-decoration: none;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    padding: 3px;
+}
+#portfolio{
+    
+    padding-left: 5%;
+    padding-top: 2%;
+    font-weight: 1000;
+      
+}
+.menu{
+    
+    display: none;
+    grid-column: 6 / 7;
+}
+
+
+.navbar a.active,
+.navbar a:hover{
+    color: #0ef;
+}
+
+section{
+    min-height: 100vh;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+
+#home{
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+
+#about{
+    background-color: rgb(30, 30, 31);
+}
+
+#education{
+    background-color: rgb(20, 20, 24);
+    position: relative;
+}
+
+#skills{
+    background-color: rgb(45, 45, 45);
+    position: relative;
+}
+
+#certificates{
+    background-color: rgb(31, 31, 38);
+}
+
+#contact{
+    background-color: rgb(46, 46, 46);
+    position: relative;
+}
+
+.bg-img img{
+    position: absolute;
+    width: 100%;
+    height: 97vh;
+    top: 10vh;
+    opacity: 0.15;
+    left: 0;
+    
+}
+#home p{
+    position: absolute;
+    font-size: 0.5em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+}
+#name{
+    top: 30vh;
+}
+#degn{
+    top: 43vh;
+}
+#prsin{
+    position: absolute;
+    top: 122vh;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.aboutable{
+    position: absolute;
+    top: 137vh;
+    left: 0vw;
+    font-size: 2vw;
+    width: 60vw;
+    
+}
+
+#septr{
+    width: 70vh;
+    position: absolute;
+    top: 160vh;
+    transform: rotate(90deg);
+    left: 50%;
+}
+.aboutable td{
+    padding-bottom: 10px;
+}
+.myimg img{
+    position: absolute;
+    width: 20vw;
+    right: 5%;
+    top: 130vh;
+    
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.myimg img:hover{
+    transform: scale(90%);
+}
+/*--------Education--------------*/
+.edu{
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: 1000;
+    position: relative;
+}
+
+#four{
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    border-bottom: 1px solid white;
+}
+
+.engdet{
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+
+.engdet , .interdet, .sscdet{
+    background-color: rgba(255, 255, 255, 0.025);
+    border-radius: 25px;
+    box-shadow:5px 5px 10px black;
+    padding: 15px;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    font-size: 20px;
+}
+.engdet:hover, .interdet:hover, .sscdet:hover{
+    transform: scale(95%);
+}
+#zero{
+    font-size: 25px;
+    position: absolute;
+    top: 48%;
+    border-bottom: 1px solid white;
+
+}
+.interdet{
+    position: absolute;
+    top: 46%;
+    left: 15%;
+}
+#teen{
+    font-size: 25px;
+    position: absolute;
+    top: 75%;
+    border-bottom: 1px solid white;
+
+}
+.sscdet{
+    position: absolute;
+    top: 73%;
+    left: 15%;
+}
+/*-------Skills----------*/
+
+#skillss{
+    font-size: 40px;
+    position: relative;
+    padding-top: 40px;
+    font-weight: 600;
+}
+.skigr{
+    position: absolute;
+    top: 30vh;
+    font-size: 30px;
+    
+}
+
+.skill{
+    position: relative;
+    display: grid;
+    grid-template-columns: "1fr 3fr";
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+#rs{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    left: 60vh;
+    top: 4vh;
+    height: 10px;
+    width: 30vw;
+    background-color: rgb(0, 0, 0);
+}
+#cr{
+    position: absolute;
+    height:8px;
+    width: 27vw;
+    background-color: #0ef;
+    right: 3vw;
+}
+#pr{
+    position: absolute;
+    height:8px;
+    width: 27vw;
+    background-color: #0ef;
+    right: 3vw;
+}
+#jr{
+    position: absolute;
+    height: 8px;
+    width:24vw;
+    background-color: #0ef;
+    right: 6vw;
+}
+#fr{
+    position: absolute;
+    height: 8px;
+    width:21vw;
+    background-color: #0ef;
+    right: 9vw;
+}
+#sr{
+    position: absolute;
+    height: 8px;
+    width:21vw;
+    background-color: #0ef;
+    right: 9vw;
+}
+#mr{
+    position: absolute;
+    height: 8px;
+    width:18vw;
+    background-color: #0ef;
+    right: 12vw;
+}
+
+#cr,#pr,#jr,#fr,#sr,#mr{
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#rs:hover #cr,
+#rs:hover #pr, 
+#rs:hover #jr, 
+#rs:hover #fr, 
+#rs:hover #sr, 
+#rs:hover #mr{
+    background-color: green;
+}
+
+
+
+
+.cert{
+    font-size: 40px;
+    padding-top: 30px;
+    font-weight: 700;
+}
+.card1{
+    left: 5%;
+}
+.card img{
+    
+    width: 10vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card2{
+    left: 30%;
+}
+.card2 img{
+    width:8vw;
+}
+.card3{
+    left: 55%;
+}
+
+
+.card4{
+    left: 78%;
+}
+
+
+.card{
+    position: absolute;
+    height: 50vh;
+    width: 15%;
+    top: 463vh;
+    font-size: 0.2em;
+    /* border: 2px solid #0EF; */
+    padding: 30px;
+    box-shadow: 2px 2px 20px black;
+    background-color: rgba(255, 255, 255, 0.032);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    border-radius: 30px;
+}
+.card:hover{
+    transform: scale(90%);
+}
+.card h2{
+    padding: 5px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.468);
+}
+
+.card a{
+    text-decoration: none;
+    
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/*--------------CONTACT-------------*/
+
+#cont{
+    font-size: 30px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.gridd{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 25%;
+    left: 13vw;
+}
+
+.addr{
+    height: 50vh;
+    width: 35vw;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.addre p:nth-child(2) , .phone p:nth-child(2) , .maile p:nth-child(2){
+    color: #0ef;
+    display: grid;
+    align-items: center;
+    text-align: left;
+}
+.addre , .phone , .maile{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.addrimg, .phoneimg, .mailimg{
+    grid-area: 1 / 1 / 3 / 2;
+}
+.addrimg img, .phoneimg img, .mailimg img{
+    height: 50px;
+    width: 50px;
+}
+.addre p:last-child , .phone p:last-child , .maile p:last-child{
+    grid-column: 2 / 3;
+}
+
+.phone::first-line{
+    color: #0ef;
+}
+.maile::first-line{
+    color: #0ef;
+}
+.message{
+    
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    text-align: left;
+}
+
+.message .inputBox{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.message .inputBox input , textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.message .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.message .inputBox input:focus ~ span,
+.message .inputBox input:valid ~ span,
+.message .inputBox textarea:focus ~ span,
+.message .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.message .inputBox input[type="submit"]{
+    width: 100px;
+    background-color: #00a0b5;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+}
+@media screen and (max-width:630px) {
+    
+    .navbar a{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        font-size: 25px;
+        padding-top: 5px;
+    }
+    .menu:hover .dropdown-content{
+        display: block;
+        height: 30vh;
+        width: 30vw;
+        padding: 5px;
+        background-color: rgb(23, 23, 23);
+        display: grid;
+        grid-template-areas: "1fr 1fr"
+                        "1fr 1fr"
+                        "1fr 1fr";
+    }
+    .menu:hover a{
+        display:inline;
+        font-size: 15px;
+    }
+    .menu:hover i{
+        display: none;
+    }
+
+    .aboutable{
+        font-size: 20px;
+    }
+
+    .engdet , .interdet , .sscdet , #four , #zero, #teen{
+        font-size: 20px;
+    }
+    
+    .gridd{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        left: 20vh;
+    }
+    .addr{
+        height: 35vh;
+        width: 60vw;
+    }
+    .message{
+        height: 35vh;
+        width: 60vw;
+    }
+}
